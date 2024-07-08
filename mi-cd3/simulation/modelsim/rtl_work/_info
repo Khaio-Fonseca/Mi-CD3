@@ -1,0 +1,84 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/simulation/modelsim
+vpbl1
+Z1 !s110 1720393766
+!i10b 1
+!s100 ?322k?<;CjXm>CV;_Wc=H2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_6JIif`Pl:``R_2je6:0Y3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1720388324
+8C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/pbl1.v
+FC:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/pbl1.v
+!i122 2
+L0 2 50
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1720393766.000000
+!s107 C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/pbl1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3|C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/pbl1.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3
+Z8 tCvgOpt 0
+vsistemaRega
+R1
+!i10b 1
+!s100 WHE_eUBETgKk=IR7MK^KY1
+R2
+I6OlXWE^EIV?a[meO^FoLU1
+R3
+R0
+w1720379556
+8C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/sistemaRega.v
+FC:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/sistemaRega.v
+!i122 1
+L0 2 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/sistemaRega.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3|C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/sistemaRega.v|
+!i113 1
+R6
+R7
+R8
+nsistema@rega
+vstate_machine
+R1
+!i10b 1
+!s100 d``YijJl6=9R_fZz]BWe:2
+R2
+ImeRFel^i]VCca4^9eIgXl1
+R3
+R0
+w1720393437
+8C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/state_machine.v
+FC:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/state_machine.v
+!i122 0
+L0 2 94
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/state_machine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3|C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/state_machine.v|
+!i113 1
+R6
+R7
+R8

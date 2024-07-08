@@ -1,0 +1,44 @@
+# Reading pref.tcl
+# do maquina_estado_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3 {C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/state_machine.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:26 on Jul 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3" C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/state_machine.v 
+# -- Compiling module state_machine
+# 
+# Top level modules:
+# 	state_machine
+# End time: 20:09:26 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3 {C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/sistemaRega.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:26 on Jul 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3" C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/sistemaRega.v 
+# -- Compiling module sistemaRega
+# 
+# Top level modules:
+# 	sistemaRega
+# End time: 20:09:26 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3 {C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/pbl1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:09:26 on Jul 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3" C:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/pbl1.v 
+# -- Compiling module pbl1
+# 
+# Top level modules:
+# 	pbl1
+# End time: 20:09:26 on Jul 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Load canceled

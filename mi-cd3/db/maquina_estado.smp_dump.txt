@@ -1,0 +1,9 @@
+
+State Machine - |sistemaRega|state_machine:mef|state
+Name state.FILLING state.CLEANING state.DRIP state.SPRINKLER state.FULL_BOX state.ERROR 
+state.ERROR 0 0 0 0 0 0 
+state.FULL_BOX 0 0 0 0 1 1 
+state.SPRINKLER 0 0 0 1 0 1 
+state.DRIP 0 0 1 0 0 1 
+state.CLEANING 0 1 0 0 0 1 
+state.FILLING 1 0 0 0 0 1 

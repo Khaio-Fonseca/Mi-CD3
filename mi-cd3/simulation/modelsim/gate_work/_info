@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kaio_/OneDrive/Fotos/Documentos/mi-cd3/simulation/modelsim
+vsistemaRega
+!s110 1720381430
+!i10b 1
+!s100 ]RYPHBd`;_FiNGzHO?geY1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I`kMR_JVj5jP7^HCd<mV?T0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1720380705
+8maquina_estado.vo
+Fmaquina_estado.vo
+!i122 0
+L0 32 1089
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1720381430.000000
+!s107 maquina_estado.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|maquina_estado.vo|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+.
+tCvgOpt 0
+nsistema@rega

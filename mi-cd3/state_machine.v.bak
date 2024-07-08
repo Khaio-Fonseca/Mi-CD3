@@ -1,0 +1,90 @@
+module state_machine (
+    input wire clk,       // Clock
+    input wire reset,     // Reset
+    input wire Us,        // Entrada Us
+    input wire Ua,        // Entrada Ua
+    input wire T,         // Entrada T
+    input wire H,         // Entrada H
+    input wire M,         // Entrada M
+    input wire L,         // Entrada L
+    output reg G,         // Saída G (Drip)
+    output reg A,         // Saída A (Sprinkler)
+    output reg VE,        // Saída VE (Válvula de Esvaziamento)
+    output reg VS,        // Saída VS (Válvula de Entrada de Água)
+    output reg AL,        // Saída AL (Alarme)
+    output reg CL         // Saída CL (Cleaning)
+);
+
+    // Estados
+    typedef enum reg [2:0] {
+        FILLING = 3'b000,
+        FULL = 3'b001,
+        SPRINKLER = 3'b010,
+        DRIP = 3'b011,
+        CLEANING = 3'b100,
+        ERROR = 3'b101
+    } state_t;
+
+    // Estados atuais e próximos
+    reg [2:0] state, next_state;
+
+    // Flip-Flop para armazenamento de estados
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            state <= FILLING;
+        else
+            state <= next_state;
+    end
+
+    // Lógica para determinar o próximo estado
+    always @(*) begin
+        case (state)
+            FILLING: if (Us & Ua & ~T & H & ~M & ~L) next_state = FULL;
+                     else next_state = ERROR;
+            FULL:    if (~Us & Ua & ~T & H & ~M & ~L) next_state = SPRINKLER;
+                     else if (Us & ~Ua & T & H & ~M & ~L) next_state = ERROR;
+                     else next_state = ERROR;
+            SPRINKLER: if (Us & ~Ua & ~T & ~H & ~M & ~L) next_state = CLEANING;
+                       else next_state = ERROR;
+            DRIP:    if (Us & ~Ua & ~T & ~H & ~M & ~L) next_state = CLEANING;
+                     else next_state = ERROR;
+            CLEANING: if (~Us & ~Ua & ~T & ~H & ~M & ~L) next_state = FILLING;
+                      else next_state = ERROR;
+            ERROR:   next_state = FILLING;
+            default: next_state = FILLING;
+        endcase
+    end
+
+    // Lógica combinacional para saídas
+    always @(*) begin
+        // Inicializa as saídas
+        G = 0;
+        A = 0;
+        VE = 0;
+        VS = 0;
+        AL = 0;
+        CL = 0;
+
+        case (state)
+            FILLING: begin
+                CL = 1;
+            end
+            FULL: begin
+                VE = 1;
+            end
+            SPRINKLER: begin
+                A = 1;
+            end
+            DRIP: begin
+                G = 1;
+            end
+            CLEANING: begin
+                CL = 1;
+            end
+            ERROR: begin
+                AL = 1;
+            end
+        endcase
+    end
+
+endmodule
